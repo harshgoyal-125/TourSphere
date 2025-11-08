@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tour Sphere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } }
+        }
+    </script>
+</head>
+<body class="text-slate-800">
+    <div id="page-home" class="page">
+        <nav class="sticky top-0 z-50 bg-white shadow-md">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 justify-between">
+                    <div class="flex">
+                        <div class="flex flex-shrink-0 items-center text-2xl font-bold text-indigo-700">
+                            Tour Sphere
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="home.html" class="rounded-md px-3 py-2 text-sm font-medium text-white bg-indigo-600" aria-current="page">Home</a>
+                        <a href="status.html" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Check Status</a>
+                        <a href="about.html" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">About Us</a>
+                        <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Contact Us</a>
+                        <a href="profile.html" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Profile</a>
+                        <a href="#" id="link-logout" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold tracking-tight text-slate-900">Discover Your Next Adventure</h1>
+            <p class="mt-4 text-lg text-slate-600">Explore our curated international tour packages.</p>
+            
+            <div id="tour-package-list" class="mt-10 grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+                <p>Loading tours...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

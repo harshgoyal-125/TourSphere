@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; 
+    background-image: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+nav {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.page-card {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #4f46e5; 
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #3730a3; 
+}
+
+.hero-section .hero-bg {
+    background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1470&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+}
+
+.profile-img-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}

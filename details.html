@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Details - Tour Sphere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } }
+        }
+    </script>
+</head>
+<body class="text-slate-800">
+    <div id="page-details" class="page">
+        <nav class="sticky top-0 z-50 bg-white shadow-md">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 justify-between">
+                    <div class="flex">
+                        <div class="flex flex-shrink-0 items-center text-2xl font-bold text-indigo-700">
+                            Tour Sphere
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="home.html" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Home</a>
+                        <a href="status.html" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Check Status</a>
+                        <a href="about.html" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">About Us</a>
+                        <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Contact Us</a>
+                        <a href="profile.html" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Profile</a>
+                        <a href="#" id="link-logout" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="mx-auto max-w-5xl py-12 px-4 sm:px-6 lg:px-8">
+            <a href="home.html" class="mb-6 flex items-center rounded-md bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800 hover:bg-slate-300 w-fit">
+                <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                Back to Packages
+            </a>
+            
+            <div id="tour-detail-content">
+                <h1 class="text-4xl font-bold tracking-tight text-slate-900">Loading tour...</h1>
+            </div>
+        </main>
+    </div>
+    
+    <script src="common.js"></script>
+    <script src="details.js"></script>
+</body>
+</html>

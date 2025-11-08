@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Tour Sphere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } }
+        }
+    </script>
+</head>
+<body class="text-slate-800">
+
+    <div id="page-register" class="page">
+        <div class="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-700 p-4">
+            <div class="w-full max-w-md rounded-xl bg-white p-8 shadow-2xl">
+                <h1 class="text-center text-3xl font-bold text-indigo-700">Create Your Account</h1>
+                <p class="mt-2 text-center text-slate-600">Get started on your next adventure!</p>
+                
+                <form id="register-form" class="mt-8 space-y-6">
+                    <div>
+                        <label for="register-name" class="sr-only">Full Name</label>
+                        <input id="register-name" name="name" type="text" required class="w-full rounded-md border border-slate-300 px-3 py-2 placeholder-slate-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500" placeholder="Full Name">
+                    </div>
+                    <div>
+                        <label for="register-email" class="sr-only">Email address</label>
+                        <input id="register-email" name="email" type="email" required class="w-full rounded-md border border-slate-300 px-3 py-2 placeholder-slate-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500" placeholder="Email address">
+                    </div>
+                    <div>
+                        <label for="register-password" class="sr-only">Password</label>
+                        <input id="register-password" name="password" type="password" required class="w-full rounded-md border border-slate-300 px-3 py-2 placeholder-slate-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500" placeholder="Password">
+                    </div>
+                    
+                    <button type="submit" class="w-full rounded-md bg-indigo-600 py-3 px-4 text-lg font-semibold text-white shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-200">
+                        Create Account
+                    </button>
+                    
+                    <p class="text-center text-sm text-slate-600">
+                        Already have an account?
+                        <a href="login.html" class="font-medium text-indigo-600 hover:text-indigo-500">
+                            Login here
+                        </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
